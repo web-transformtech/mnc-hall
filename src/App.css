@@ -1,0 +1,21 @@
+*{
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+/* 
+.Satisfied {
+  background-image: url("./assets/Home/hall/background.png");
+  height: 100vh;
+} */
+.border-box{
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.font-border{
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+.font-white{
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+}
