@@ -1,26 +1,30 @@
+/* eslint-disable no-unused-vars */
 import React from "react";
 import Navbar from "../Components/Home/Navbar";
-import Hero from "../Components/Home/Hero";
-import SatisfiedClients from "../Components/Home/SatisfiedClients";
-import Location from "../Components/Home/Location";
-import LeadSection from "../Components/Home/LeadSection";
-import Gallery from "../Components/Home/Gallery";
-import Services from "../Components/Home/Services";
 import About from "../Components/Home/About";
+import Hero from "../Components/Home/Hero"
+import AboutUs from "../Components/Home/AboutUs";
+import SatisfiedClients from "../Components/Home/SatisfiedClients";
+import LeadSection from "../Components/Home/LeadSection";
+import ContactDetails from "../Components/Home/ContactDetails";
 import Footer from "../Components/Home/Footer";
+
 
 export default function Home() {
   return (
     <div>
       <Navbar />
-      {/* <Hero /> */}
-      <About/>
+       <Hero/>
+      {/* <About/> */}
+      <AboutUs/>
       {/* <Services /> */}
-      {/* <LeadSection /> */}
       {/* <Gallery /> */}
-      {/* <SatisfiedClients /> */}
+      <SatisfiedClients />
+      <LeadSection/>
+
+      <ContactDetails/>
       {/* <Location /> */}
-      {/* <Footer/> */}
+      <Footer/>
     </div>
   );
 }

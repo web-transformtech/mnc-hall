@@ -19,3 +19,38 @@
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: white;
 }
+
+
+.arrow-left {
+  display:inline-block;
+  width: 0; 
+  height: 0; 
+  border-top: 40px solid red;
+  border-bottom: 40px solid red;
+  border-left: 40px solid transparent;
+}
+
+.arrow-ctr {
+  display:inline-block;
+  width:150px;
+  background:red;
+  min-height:80px;
+  position:relative;
+  left: 0px;
+}
+.arrow-right {
+  display:inline-block;
+  height: 0; 
+  border-top: 40px solid transparent;
+  border-bottom: 40px solid transparent;
+  border-left: 40px solid red;
+  position:relative;
+  left: 0px;
+}
+
+.shapes{
+  clip-path: polygon(0 0, 100% 0%, 92% 100%, 0% 100%);
+  background-color: #fba732;
+  height: 150px;
+  width: 150%;
+}

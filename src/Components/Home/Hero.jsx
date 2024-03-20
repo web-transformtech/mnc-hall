@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React from "react";
 import Building from "./../../assets/Home/mnc/building.png";
 import Table from "./../../assets/Home/mnc/table.png";
@@ -14,7 +15,7 @@ export default function Hero() {
           <img src={HeroImage} className=" h-[100vh] object-cover w-full" />
         </div>
         <div className=" absolute top-0 w-full">
-          <div className=" container mx-auto py-[100px]">
+          <div className=" container mx-auto py-[50px]">
             <div className=" grid grid-cols-12 sm:gid-cols-12">
               <div className="sm:grid-cols-12 flex justify-center">
                 <img src={Logo} alt="logo" />
@@ -39,7 +40,7 @@ export default function Hero() {
               </p>
             </div>
             <div className=" flex justify-center">
-              <button class=" bg-peacockGreen text-white py-4 px-10 my-6 text-base">
+              <button className=" bg-peacockGreen text-white py-4 px-10 my-6 text-base">
                 Book Now
               </button>
             </div>
@@ -47,19 +48,19 @@ export default function Hero() {
         </div>
       </div>
 
-      <div className=" bg-primary ">
-        <div className=" container mx-auto">
+      <div className=" ">
+        <div className="">
           <div className=" grid lg:grid-cols-4 sm:grid-cols-2 md:grid-cols-2 mdsm:grid-cols-2">
-            <div className=" flex justify-center text-center">
+            <div className="bg-primary  flex justify-center text-center">
               <img src={Building} alt="Building" className="  h-[100px]" />
             </div>
-            <div className=" flex justify-center text-center">
+            <div className="bg-secondary flex justify-center text-center">
               <img src={Table} alt="Table" className=" h-[100px] " />
             </div>
-            <div className=" flex justify-center text-center">
+            <div className="bg-peacockGreen flex justify-center text-center">
               <img src={Location} alt="Location" className="  h-[100px]" />
             </div>
-            <div className=" flex justify-center text-center">
+            <div className="bg-[#353978] flex justify-center text-center">
               <img src={Parking} alt="Parking" className=" h-[100px]" />
             </div>
           </div>
