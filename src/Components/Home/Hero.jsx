@@ -6,15 +6,16 @@ import Location from "./../../assets/Home/mnc/location.png";
 import Parking from "./../../assets/Home/mnc/parking.png";
 import HeroImage from "../../assets/Home/mnc/hero.png";
 import Logo from "../../assets/Home/logo.png";
+import Hall from "../../assets/Home/about/hall.jpg"
 
 export default function Hero() {
   return (
-    <div>
-      <div className=" relative">
-        <div className="">
-          <img src={HeroImage} className=" h-[100vh] object-cover w-full" />
+    <div className="">
+      <div className=" h-[100vh] relative">
+        <div className="  h-[100vh] ">
+          <img src={Hall} className=" h-[100vh]  object-cover w-full" />
         </div>
-        <div className=" absolute top-0 w-full">
+        <div className=" gradient h-full absolute top-0 w-full">
           <div className=" container mx-auto py-[50px]">
             <div className=" grid grid-cols-12 sm:gid-cols-12">
               <div className="sm:grid-cols-12 flex justify-center">
@@ -22,25 +23,24 @@ export default function Hero() {
               </div>
               <div className=" col-span-6 sm:grid-cols-11 ">
                 <h1 className=" text-white sm:text-[30px] font-border font-semibold  py-1 text-[36px]">
-                  MNC VEL KALYANAMANDAPAM
+                  MNC
                 </h1>
               </div>
             </div>
 
-            <div className="w-full">
-              <h1 className=" sm:text-[40px] text-textback font-white text-center text-[70px] pt-[70px] font-semibold pb-4">
+            <div className="w-full mt-12 px-10">
+              <h1 className=" sm:text-[40px] text-white w-[70%]  text-left text-[50px] pt-[50px] leading-[80px] font-semibold pb-4">
                 Unique housing solutions
                 <br />
                 for you
               </h1>
-              <p className=" text-center pt-6 pb-10">
+              <p className=" text-left text-white pb-10">
                 Whether you’re buying, listing, or renting,
-                <br />
                 we can be of assistance to you.
               </p>
             </div>
-            <div className=" flex justify-center">
-              <button className=" bg-peacockGreen text-white py-4 px-10 my-6 text-base">
+            <div className=" mx-10 flex">
+              <button className=" bg-peacockGreen text-white py-4 px-10 my-2 text-base">
                 Book Now
               </button>
             </div>

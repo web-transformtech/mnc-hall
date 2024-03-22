@@ -73,7 +73,6 @@ export default function LeadSection() {
                 />
               </div>
 
-              
               <div>
                 <input
                   type="email"
@@ -82,7 +81,6 @@ export default function LeadSection() {
                 />
               </div>
 
-              
               <div>
                 <input
                   type="number"
@@ -100,11 +98,22 @@ export default function LeadSection() {
           </div>
 
           <div className="relative ">
-            <div className=" bg-peacockGreen absolute left-[-40px] w-full  z-[-2] rounded-md p-10">
-
-            <div className=" text-white font-semibold mb-1 text-center tracking-wide text-[24px]">
+            <div className=" bg-peacockGreen  my-4 absolute left-[-40px] w-full  z-[-2] rounded-md p-10">
+              <div className=" text-white font-semibold mb-4 text-center tracking-wide text-[24px]">
                 Our <span className=" font-semibold">Location </span>
               </div>
+
+              <iframe 
+              className=" ml-4"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3915.8358923974824!2d77.11449447402092!3d11.050927754072571!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba858fcf00a61dd%3A0xe2d29608397c7faa!2sMNC%20Vel%20Kalyanamandapam!5e0!3m2!1sen!2sin!4v1710917236505!5m2!1sen!2sin"
+                width="100%"
+                height="180"
+                style={{}}
+                allowfullscreen=""
+                loading="lazy"
+                // eslint-disable-next-line react/no-unknown-property
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
             </div>
           </div>
         </div>

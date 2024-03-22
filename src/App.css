@@ -19,6 +19,9 @@
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: white;
 }
+.gradient{
+  background-image: linear-gradient(to right top, #b2444dc4, #d16144c7, #e58637c7, #ebaf2bc4, #e3da32c7);
+}
 
 
 .arrow-left {
