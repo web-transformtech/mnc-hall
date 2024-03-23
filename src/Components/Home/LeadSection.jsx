@@ -5,38 +5,38 @@ import HallTwo from "../../assets/Home/hall/living-hall-two.png";
 
 export default function LeadSection() {
   return (
-    <div className=" container mx-auto py-16">
+    <div className=" relative container mx-auto py-16">
       <div className=" grid grid-cols-12 py-10">
-        <div className=" col-span-6 h-full  relative ">
-          <p className=" text-black text-[40px] pl-10 pr-16 absolute bottom-0 font-semibold leading-[50px]">
+        <div className=" col-span-6 sm:col-span-12 h-full  relative ">
+          <p className=" text-black text-[40px] sm:text-[36px] sm:pb-10 pl-10 pr-16 sm:px-4 absolute sm:relative bottom-0 font-semibold leading-[50px]">
             Get the <span className=" text-primary font-semibold">Best</span>{" "}
             property
-            <span className=" text-primary font-semibold"> investment </span>
+            <span className=" text-primary font-semibold sm:text-[36px]"> investment </span>
             options with the help of our highly experienced group of real estate
             brokers.
           </p>
         </div>
-        <div className=" col-span-6">
+        <div className=" sm:col-span-12 col-span-6">
           <div className=" grid grid-cols-3 gap-6">
-            <div className=" relative h-full">
+            <div className="sm:hidden relative h-full">
               <div className=" absolute bottom-0">
                 <img src={HallTwo} />
               </div>
             </div>
-            <div className=" col-span-2 relative">
-              <div className="  text-primary ml-[-30px] text-[44px] pb-4 font-semibold">
+            <div className=" sm:col-span-12 col-span-2 relative">
+              <div className="  text-primary sm:ml-0 sm:px-4 ml-[-30px] sm:text-[36px] text-[44px] pb-4 font-semibold">
                 Stage Decoration
               </div>
-              <img src={HallOne} />
+              <img src={HallOne}  className=" sm:w-full sm:px-4"/>
             </div>
           </div>
         </div>
       </div>
 
-      <div className="  py-10  h-[400px] ">
-        <div className=" grid relative grid-cols-3 ">
+      <div className="  py-10  h-[400px] sm:h-auto ">
+        <div className=" grid sm:px-4 relative grid-cols-3 sm:grid-cols-1">
           <div className="relative ">
-            <div className=" bg-primary my-6 absolute right-[-40px] w-full  z-[-2] rounded-md p-10">
+            <div className=" bg-primary my-6 sm:my-4 sm:relative sm:right-0 absolute right-[-40px] w-full  z-[-2] rounded-md p-10">
               <div className=" text-white font-semibold text-center tracking-wide text-[24px]">
                 Contact <span className=" font-semibold">Details </span>
               </div>
@@ -60,7 +60,7 @@ export default function LeadSection() {
             </div>
           </div>
           <div className="relative  ">
-            <div className=" bg-secondary absolute  w-full  z-[4] rounded-md p-10">
+            <div className=" bg-secondary sm:relative absolute  w-full  z-[4] rounded-md p-10">
               <div className=" text-white font-semibold mb-1 text-center tracking-wide text-[24px]">
                 Contact <span className=" font-semibold">us </span>
               </div>
@@ -98,13 +98,13 @@ export default function LeadSection() {
           </div>
 
           <div className="relative ">
-            <div className=" bg-peacockGreen  my-4 absolute left-[-40px] w-full  z-[-2] rounded-md p-10">
+            <div className=" bg-peacockGreen  sm:relative my-4 sm:left-0 absolute left-[-40px] w-full  z-[-2] rounded-md p-10">
               <div className=" text-white font-semibold mb-4 text-center tracking-wide text-[24px]">
                 Our <span className=" font-semibold">Location </span>
               </div>
 
               <iframe 
-              className=" ml-4"
+              className=" ml-4 sm:ml-0"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3915.8358923974824!2d77.11449447402092!3d11.050927754072571!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba858fcf00a61dd%3A0xe2d29608397c7faa!2sMNC%20Vel%20Kalyanamandapam!5e0!3m2!1sen!2sin!4v1710917236505!5m2!1sen!2sin"
                 width="100%"
                 height="180"

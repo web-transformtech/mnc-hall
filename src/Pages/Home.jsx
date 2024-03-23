@@ -19,12 +19,12 @@ export default function Home() {
       <AboutUs/>
       {/* <Services /> */}
       {/* <Gallery /> */}
-      <SatisfiedClients />
-      <LeadSection/>
+      {/* <SatisfiedClients /> */}
+      {/* <LeadSection/> */}
 
-      <ContactDetails/>
+      {/* <ContactDetails/> */}
       {/* <Location /> */}
-      <Footer/>
+      {/* <Footer/> */}
     </div>
   );
 }

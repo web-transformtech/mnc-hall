@@ -57,3 +57,24 @@
   height: 150px;
   width: 150%;
 }
+
+#servicesSlider{
+  /* padding-top: 100px; */
+  overflow: inherit!important;
+}
+
+#servicesSlider .swiper-button-prev{
+background-color: #fff;
+padding: 4px;
+  top: -14%;
+}
+#servicesSlider .swiper-button-prev, .swiper-rtl .swiper-button-next{
+  left:inherit!important;
+  right: 4%!important;
+}
+
+#servicesSlider .swiper-button-next, .swiper-rtl .swiper-button-prev{
+  /* left:0px!important; */
+  top:-14%;
+  /* right: inherit!important; */
+}
