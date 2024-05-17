@@ -6,16 +6,19 @@ import Location from "./../../assets/Home/mnc/location.png";
 import Parking from "./../../assets/Home/mnc/parking.png";
 import HeroImage from "../../assets/Home/mnc/hero.png";
 import Logo from "../../assets/Home/logo.png";
-import Hall from "../../assets/Home/about/hall.jpg";
+import Hall from "../../assets/Home/about/hall.png";
 
 export default function Hero() {
   return (
     <div className="">
-      <div className=" h-[100vh] landscape:h-auto relative">
-        <div className="  h-[100vh] landscape:h-auto">
-          <img src={Hall} className=" h-[100vh] landscape:h-auto object-cover w-full" />
+      <div className=" h-[90vh]  mdlg:h-[90vh]  relative">
+        <div className=" mdlg:h-[90vh]  overflow-hidden ">
+          <div className="h-[90vh] overflow-hidden kenburns-right">
+          <img src={Hall}  className=" h-[90vh]  overflow-hidden object-cover w-full" />
+          </div>
+        
         </div>
-        <div className=" gradient h-full absolute top-0 w-full">
+        {/* <div className=" gradient h-full absolute top-0 w-full">
           <div className=" container mx-auto py-[50px]">
             <div className=" grid grid-cols-12 sm:gid-cols-12">
               <div className="sm:col-span-2 md:col-span-2 lg:col-span-1 md:mx-4 mdsm:col-span-2 md:justify-end mdsm:justify-end  flex justify-center sm:justify-end">
@@ -45,7 +48,7 @@ export default function Hero() {
               </button>
             </div>
           </div>
-        </div>
+        </div> */}
        
       </div>
       <div className="  w-full ">
@@ -66,7 +69,9 @@ export default function Hero() {
           </div>
         </div>
       </div>
-     
+     {/* <div className=" lg:bg-primary mdlg:bg-red ">
+        Hello
+     </div> */}
     </div>
   );
 }

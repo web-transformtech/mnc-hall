@@ -7,13 +7,17 @@ export default function SatisfiedClients() {
   return (
     <div className=" relative">
       <div className="absolute z-0 w-full ">
-        <img src={Background} alt="background" className="h-[100vh] sm:object-cover   w-full" />
+        <img
+          src={Background}
+          alt="background"
+          className="h-[100vh] lg:h-auto sm:object-cover   w-full"
+        />
       </div>
 
       <div className="Satisfied relative z-4 container mx-auto py-[100px]">
         <div className="grid grid-cols-12">
-          <div className=" col-span-1"></div>
-          <div className=" col-span-4 sm:col-span-12 flex justify-center">
+          <div className=" lg:col-span-1 md:hidden mdsm:hidden lg:block"></div>
+          <div className=" lg:col-span-4 md:col-span-12 mdsm:col-span-12 sm:col-span-12 flex justify-center">
             <div
               className=" text-textback sm:text-center sm:text-[26px] text-[56px] font-semibold"
               style={{ margin: "auto 0px" }}
@@ -21,7 +25,7 @@ export default function SatisfiedClients() {
               Satisfied Clients
             </div>
           </div>
-          <div className=" col-span-7 sm:col-span-12">
+          <div className=" lg:col-span-7 md:col-span-12 mdsm:col-span-12 sm:col-span-12">
             <div className=" w-[90%] sm:w-full sm:px-4">
               <div className=" flex w-full sm:pt-3">
                 <div className=" w-[25%] sm:w-[20%]  ">
@@ -29,7 +33,11 @@ export default function SatisfiedClients() {
                     className=" bg-primary border-box flex justify-center h-[60px]  w-[60px] sm:h-[40px] sm:w-[40px] rounded-[50%]  "
                     style={{ margin: "6px auto" }}
                   >
-                    <img src={User} alt="user" className=" h-[30px] sm:h-[20px] sm:my-2 my-4" />
+                    <img
+                      src={User}
+                      alt="user"
+                      className=" h-[30px] sm:h-[20px] sm:my-2 my-4"
+                    />
                   </div>
                 </div>
                 <div className=" w-[75%] sm:w-[80%]">
@@ -49,7 +57,11 @@ export default function SatisfiedClients() {
                     className=" bg-primary border-box flex justify-center h-[60px]  w-[60px] sm:h-[40px] sm:w-[40px] rounded-[50%]  "
                     style={{ margin: "6px auto" }}
                   >
-                    <img src={User} alt="user" className=" h-[30px] sm:h-[20px] sm:my-2 my-4" />
+                    <img
+                      src={User}
+                      alt="user"
+                      className=" h-[30px] sm:h-[20px] sm:my-2 my-4"
+                    />
                   </div>
                 </div>
                 <div className=" w-[75%] sm:w-[80%]">
@@ -69,7 +81,11 @@ export default function SatisfiedClients() {
                     className=" bg-primary border-box flex justify-center h-[60px]  w-[60px] sm:h-[40px] sm:w-[40px] rounded-[50%]  "
                     style={{ margin: "6px auto" }}
                   >
-                    <img src={User} alt="user" className=" h-[30px] sm:h-[20px] sm:my-2 my-4" />
+                    <img
+                      src={User}
+                      alt="user"
+                      className=" h-[30px] sm:h-[20px] sm:my-2 my-4"
+                    />
                   </div>
                 </div>
                 <div className=" w-[75%] sm:w-[80%]">
@@ -86,7 +102,6 @@ export default function SatisfiedClients() {
           </div>
         </div>
       </div>
-
     </div>
   );
 }

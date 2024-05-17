@@ -10,6 +10,6 @@ export default defineConfig({
     host: "172.16.22.98",
     // host: "172.16.22.98",
     // host: "172.16.22.6",
-    port: "5051",
+    port: "5089",
   },
 });

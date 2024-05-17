@@ -9,6 +9,8 @@ export default {
       // => @media (min-width: 768px) { ... }
       md: "768px",
       // => @media (min-width: 768px) { ... }
+      mdlg: "700px",
+      // => @media (min-width: 768px) { ... }
       lge: "1023px",
       // => @media (min-width: 1024px) { ... }
       lg: "1024px",
