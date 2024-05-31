@@ -9,6 +9,9 @@
   font-optical-sizing: auto;
   font-weight: bold;
 }
+html {
+  scroll-behavior: smooth;
+}
 /* 
 .Satisfied {
   background-image: url("./assets/Home/hall/background.png");

@@ -13,7 +13,6 @@ import Footer from "../Components/Home/Footer";
 export default function Home() {
   return (
     <div>
-      <Navbar />
        <Hero/>
       {/* <About/> */}
       <AboutUs/>

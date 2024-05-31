@@ -33,7 +33,7 @@ import Call from "../../assets/Home/about/call.png";
 
 export default function AboutUs() {
   return (
-    <div>
+    <div id="aboutus">
       <div className=" container mx-auto py-[100px]">
         <div className=" grid grid-cols-12 sm:gap-0  gap-10">
           <div className=" sm:hidden  "></div>
@@ -108,7 +108,10 @@ export default function AboutUs() {
           </div>
         </div>
       </div> */}
-      <div className=" relative sm:h-[100vh] sm:overflow-hidden">
+      <div
+        className=" relative sm:h-[100vh] sm:overflow-hidden"
+        id="infrawehave"
+      >
         <img
           src={HallBackground}
           className=" h-[500px] sm:h-[100vh] sm:object-cover w-full object-cover"
@@ -141,14 +144,18 @@ export default function AboutUs() {
                   slidesPerView: 2.3,
                   spaceBetween: 50,
                 },
+                1000: {
+                  slidesPerView: 3.4,
+                  spaceBetween: 20,
+                },
                 1224: {
                   slidesPerView: 4,
-                  spaceBetween: 50,
+                  spaceBetween: 20,
                 },
               }}
               modules={[Navigation, Pagination, Mousewheel, Keyboard]}
               id="servicesSlider"
-              className="mySwiper sm:px-4"
+              className="mySwiper px-4"
             >
               <SwiperSlide>
                 <div>
@@ -156,9 +163,9 @@ export default function AboutUs() {
                     src={BanquetHall}
                     className=" sm:h-[40vh] h-[400px] object-cover sm:object-cover w-full rounded-md"
                   />
-                  <div className="p-4 sm:bg-white relative">
-                  <div className=" absolute top-[-34px] right-[20px] bg-[#b2444d] rounded-md p-1.5">
-                    <img src={Building} className="h-[50px]"/>
+                  <div className="p-4 sm:bg-white relative rounded-b-lg">
+                    <div className=" absolute top-[-34px] right-[20px] bg-[#b2444d] rounded-md p-1.5">
+                      <img src={Building} className="h-[50px]" />
                     </div>
                     <h4 className="text-h4 pt-3 text-black font-semibold text-left">
                       Banquet Hall
@@ -177,9 +184,9 @@ export default function AboutUs() {
                     src={DinnerHall}
                     className=" sm:h-[40vh] h-[400px] object-cover sm:object-cover w-full rounded-md"
                   />
-                  <div className="p-4 sm:bg-white relative">
-                  <div className=" absolute top-[-34px] right-[20px] bg-[#fba732] rounded-md p-1.5">
-                    <img src={Table} className="h-[50px]"/>
+                  <div className="p-4 sm:bg-white relative rounded-b-lg">
+                    <div className=" absolute top-[-34px] right-[20px] bg-[#fba732] rounded-md p-1.5">
+                      <img src={Table} className="h-[50px]" />
                     </div>
                     <h4 className="text-h4 pt-3 text-black font-semibold text-left">
                       Dining Hall
@@ -198,9 +205,9 @@ export default function AboutUs() {
                     src={GuestRoom}
                     className=" sm:h-[40vh] h-[400px] object-cover sm:object-cover w-full rounded-md"
                   />
-                  <div className="p-4 sm:bg-white relative">
-                  <div className=" absolute top-[-34px] right-[20px] bg-[#4ea2b3] rounded-md p-1.5">
-                    <img src={Location} className="h-[50px]"/>
+                  <div className="p-4 sm:bg-white relative rounded-b-lg">
+                    <div className=" absolute top-[-34px] right-[20px] bg-[#4ea2b3] rounded-md p-1.5">
+                      <img src={Location} className="h-[50px]" />
                     </div>
                     <h4 className="text-h4 pt-3 text-black font-semibold text-left">
                       Guest Rooms
@@ -219,9 +226,9 @@ export default function AboutUs() {
                     src={CarPark}
                     className=" sm:h-[40vh] h-[400px] object-cover sm:object-cover w-full rounded-md"
                   />
-                  <div className="p-4 sm:bg-white relative">
+                  <div className="p-4 sm:bg-white relative rounded-b-lg">
                     <div className=" absolute top-[-34px] right-[20px] bg-[#353978] rounded-md p-1.5">
-                    <img src={Parking} className="h-[50px]"/>
+                      <img src={Parking} className="h-[50px]" />
                     </div>
                     <h4 className="text-h4 pt-3 text-black font-semibold text-left">
                       Larger Car Parking
@@ -234,13 +241,12 @@ export default function AboutUs() {
                   </div>
                 </div>
               </SwiperSlide>
-            
             </Swiper>
           </div>
         </div>
       </div>
 
-      <div className=" lg:py-[170px] md:py-[170px] mdsm:py-[120px] sm:py-0"></div>
+      <div className=" lg:py-[170px] md:py-[170px] mdsm:py-[120px] sm:py-0 sm:pb-16"></div>
 
       {/* <div className="sm:hidden grid grid-cols-12 my-20">
         <div className=" col-span-5">
