@@ -5,7 +5,8 @@ import Table from './../../assets/Home/mnc/table.png';
 import Location from './../../assets/Home/mnc/location.png';
 import Parking from './../../assets/Home/mnc/parking.png';
 // import HeroImage from '../../assets/Home/mnc/hero.png';
-// import Logo from '../../assets/Home/logo.png';
+import Logo from '../../assets/Home/logo2.png';
+import SMLogo from '../../assets/Home/logo.png';
 // import { Link } from 'react-router-dom';
 import { RiAlignLeft } from 'react-icons/ri';
 import { MdCancel } from 'react-icons/md';
@@ -24,7 +25,9 @@ export default function Hero() {
                         <div className="  flex justify-end p-4 ">
                             <MdCancel onClick={() => handleNav()} className="text-white hover:text-secondary cursor-pointer" />
                         </div>
-                        <div className="text-center text-white  py-0">Logo</div>
+                        <div className="text-white py-0">
+                            <img src={Logo} />
+                        </div>
                         <div></div>
                         <div className="=  p-4">
                             <a href="#home">
@@ -96,7 +99,21 @@ export default function Hero() {
                                     <div className="h-full">
                                         <div className="h-full px-8 flex justify-center items-center">
                                             <div className="block">
-                                                <h1 className="text-secondary text-center 2xl:text-6xl xl:text-6xl lg:text-6xl lge:text-6xl md:text-5xl mdsm:text-4xl sm:text-xl font-semibold">MNC Vel Kalyana Mandapam</h1>
+                                                <div className="flex justify-center">
+                                                    <img
+                                                        src={Logo}
+                                                        alt="MNC Vel Logo"
+                                                        className="2xl:block xl:block lg:block lge:block mdlg:block md:block mdsm:hidden sm:hidden"
+                                                    />
+                                                    <img
+                                                        src={SMLogo}
+                                                        alt="MNC Vel Logo"
+                                                        className="2xl:hidden xl:hidden lg:hidden lge:hidden mdlg:hidden md:hidden mdsm:block sm:block"
+                                                    />
+                                                </div>
+                                                <h1 className="text-secondary text-center 2xl:text-6xl xl:text-6xl lg:text-6xl lge:text-6xl md:text-5xl mdsm:text-4xl sm:text-xl font-semibold">
+                                                    MNC Vel Kalyana Mandapam
+                                                </h1>
                                                 <div className="w-[80%] mx-auto text-center text-white w-80% 2xl:text-h4 xl:text-h4 lg:text-h4 lge:text-h4 md:text-h5 mdsm:text-h6 sm:text-h6">
                                                     &#34;Cherish your moment in our enchanting marriage hall where dreams become unforgettable
                                                     realities.&#34;

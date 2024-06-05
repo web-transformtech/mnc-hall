@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 import React from 'react';
-
+import Noprofile from '../../assets/Home/noprofile.webp';
 export default function LeadSection() {
     return (
         <>
@@ -8,10 +8,7 @@ export default function LeadSection() {
                 <div className="text-[36px] pb-6 text-center sm:px-2  text-primary font-semibold">Eventful Experiences Shared by Our Guests</div>
                 <div className=" grid lg:grid-cols-3 sm:grid-cols-1 md:grid-cols-2 gap-10">
                     <div className=" p-3">
-                        <img
-                            src="https://images.pexels.com/photos/3785079/pexels-photo-3785079.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                            className=" h-[200px] w-[200px] rounded-full object-cover mx-auto"
-                        />
+                        <img src={Noprofile} className=" h-[200px] w-[200px] rounded-full object-cover mx-auto" />
                         <h2 className=" text-center text-h2 text-black font-semibold pt-2 ">Sathish SKN</h2>
                         <div className=" text-center pt-2">
                             Had my brothers marriage reception at this auditorium, and it was fantastic! The space was bright and airy, and the staff
@@ -19,10 +16,7 @@ export default function LeadSection() {
                         </div>
                     </div>
                     <div className=" p-3">
-                        <img
-                            src="https://images.pexels.com/photos/3785079/pexels-photo-3785079.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                            className=" h-[200px] w-[200px] rounded-full object-cover mx-auto"
-                        />
+                        <img src={Noprofile} className=" h-[200px] w-[200px] rounded-full object-cover mx-auto" />
                         <h2 className=" text-center text-h2 text-black font-semibold pt-2 ">Samanue </h2>
                         <div className="text-center pt-2">
                             I attended a wedding reception at this auditorium, and it was fantastic! The venue was beautifully decorated, creating a
@@ -31,10 +25,7 @@ export default function LeadSection() {
                         </div>
                     </div>
                     <div className=" p-3">
-                        <img
-                            src="https://images.pexels.com/photos/3785079/pexels-photo-3785079.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                            className=" h-[200px] w-[200px] rounded-full object-cover mx-auto"
-                        />
+                        <img src={Noprofile} className=" h-[200px] w-[200px] rounded-full object-cover mx-auto" />
                         <h2 className=" text-center text-h2 text-black font-semibold pt-2 ">Vidhya Selvaraj </h2>
                         <div className="text-center pt-2">
                             Very spacious Kalyana Mandapam. Our wedding on February 11 and 12, 2021, had a large stage where close relatives could

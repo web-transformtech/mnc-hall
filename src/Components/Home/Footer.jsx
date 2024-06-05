@@ -11,7 +11,10 @@ export default function Footer() {
                         About
                     </a>
                     <a className="hover:text-gray-900" href="#services">
-                        Services
+                        Infra We Have
+                    </a>
+                    <a className="hover:text-gray-900" href="#services">
+                        Teams
                     </a>
                     <a className="hover:text-gray-900" href="#contact">
                         Contact
@@ -22,18 +25,21 @@ export default function Footer() {
                     <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
                         <img src="https://img.icons8.com/fluent/30/000000/facebook-new.png" />
                     </a>
-                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+                    {/* <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
                         <img src="https://img.icons8.com/fluent/30/000000/linkedin-2.png" />
-                    </a>
+                    </a> */}
                     <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
                         <img src="https://img.icons8.com/fluent/30/000000/instagram-new.png" />
                     </a>
-                    <a href="https://messenger.com" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">
+                        <img src="https://img.icons8.com/fluent/30/000000/youtube.png" />
+                    </a>
+                    {/* <a href="https://messenger.com" target="_blank" rel="noopener noreferrer">
                         <img src="https://img.icons8.com/fluent/30/000000/facebook-messenger--v2.png" />
-                    </a>
-                    <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+                    </a> */}
+                    {/* <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
                         <img src="https://img.icons8.com/fluent/30/000000/twitter.png" />
-                    </a>
+                    </a> */}
                 </div>
                 <p className="text-center text-gray-700 font-medium">&copy; 2022 Company Ltd. All rights reservered.</p>
             </footer>
