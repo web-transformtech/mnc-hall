@@ -6,6 +6,7 @@ import LeadSection from '../Components/Home/LeadSection';
 import ContactDetails from '../Components/Home/ContactDetails';
 import Footer from '../Components/Home/Footer';
 import Gallery from '../Components/Home/Gallery';
+import HighLight from '../Components/Home/HighLight';
 
 export default function Home() {
     return (
@@ -14,6 +15,7 @@ export default function Home() {
             <AboutUs />
             <Gallery />
             <LeadSection />
+            <HighLight/>
             <ContactDetails/>
             <Footer />
         </div>
