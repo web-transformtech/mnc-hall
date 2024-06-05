@@ -8,8 +8,8 @@ export default function HighLight() {
                             Celebration Hub
                         </h1>
                         <h2 className="lg:text-[50px] lge:text-[50px] md:text-h1 mdsm:text-h1 sm:text-h3 Macondo w-[70%] mx-auto text-white font-semibold text-center">
-                            "Experience timeless elegance at our versatile event venue, perfect for weddings, receptions, and all your special
-                            occasions. Book now and create unforgettable memories in a setting tailored to your dreams."
+                            &#34;Experience timeless elegance at our versatile event venue, perfect for weddings, receptions, and all your special
+                            occasions. Book now and create unforgettable memories in a setting tailored to your dreams.&#34;
                         </h2>
                     </div>
                 </div>

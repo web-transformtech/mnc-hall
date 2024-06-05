@@ -18,7 +18,6 @@ export default function LeadSection() {
                             went above and beyond to make sure everything was set up perfectly. It was a hassle-free experience from start to finish.
                         </div>
                     </div>
-
                     <div className=" p-3">
                         <img
                             src="https://images.pexels.com/photos/3785079/pexels-photo-3785079.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
@@ -31,7 +30,6 @@ export default function LeadSection() {
                             was a wonderful experience. I highly recommend it for any event.
                         </div>
                     </div>
-
                     <div className=" p-3">
                         <img
                             src="https://images.pexels.com/photos/3785079/pexels-photo-3785079.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
@@ -45,7 +43,6 @@ export default function LeadSection() {
                     </div>
                 </div>
             </div>
-
             {/* <div className=" relative container mx-auto py-16">
       <div className=" grid grid-cols-12 py-10">
         <div className=" lg:col-span-6 md:col-span-12 mdsm:col-span-12 sm:col-span-12 h-full  relative ">
@@ -73,8 +70,6 @@ export default function LeadSection() {
           </div>
         </div>
       </div>
-
-     
     </div> */}
         </>
     );

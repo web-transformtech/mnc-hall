@@ -1,21 +1,18 @@
 /* eslint-disable no-unused-vars */
-import React, { useState } from 'react';
+import { useState } from 'react';
 import Building from './../../assets/Home/mnc/building.png';
 import Table from './../../assets/Home/mnc/table.png';
 import Location from './../../assets/Home/mnc/location.png';
 import Parking from './../../assets/Home/mnc/parking.png';
-import HeroImage from '../../assets/Home/mnc/hero.png';
-import Logo from '../../assets/Home/logo.png';
-import { Link } from 'react-router-dom';
+// import HeroImage from '../../assets/Home/mnc/hero.png';
+// import Logo from '../../assets/Home/logo.png';
+// import { Link } from 'react-router-dom';
 import { RiAlignLeft } from 'react-icons/ri';
 import { MdCancel } from 'react-icons/md';
-
 // import Hall from "../../assets/Home/about/hall.png";
 import Hall from '../../assets/Home/hall/mnc_hall.png';
-
 export default function Hero() {
     const [navbarState, setNavBar] = useState(false);
-
     const handleNav = () => {
         setNavBar(!navbarState);
     };
@@ -57,7 +54,6 @@ export default function Hero() {
             ) : (
                 <div></div>
             )}
-
             <div className="" id="home">
                 <div className=" h-[100vh]  mdlg:h-[100vh]  relative">
                     <div className=" mdlg:h-[100vh]  overflow-hidden ">
@@ -92,11 +88,9 @@ export default function Hero() {
                                 </div>
                             </div>
                             {/* Mobile View  */}
-
                             <div className=" lg:hidden  p-5 lge:hidden md:block mdsm:block sm:block">
                                 {navbarState ? null : <RiAlignLeft onClick={() => handleNav()} className=" text-white  cursor-pointer text-h1" />}
                             </div>
-
                             <div className=" container mx-auto h-full">
                                 <div className="grid grid-cols-1   gap-4  h-full">
                                     <div className="  h-full">

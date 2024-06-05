@@ -1,28 +1,21 @@
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
-
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-
 // import './styles.css';
-
 // import required modules
 import { Navigation, Pagination, Mousewheel, Keyboard } from 'swiper/modules';
-
 import DinnerHall from '../../assets/Home/hall/Dinner Hall.jpg';
 import GuestRoom from '../../assets/Home/hall/Guest Room.jpg';
 import CarPark from '../../assets/Home/hall/car-park.jpg';
-
 import HallBackground from '../../assets/Home/about/hall-background.jpg';
-
 import Building from './../../assets/Home/mnc/building.png';
 import Table from './../../assets/Home/mnc/table.png';
 import Location from './../../assets/Home/mnc/location.png';
 import Parking from './../../assets/Home/mnc/parking.png';
 import BanquetHall from '../../assets/Home/hall/Banquet Halls.jpg';
-
 export default function Gallery() {
     return (
         <>

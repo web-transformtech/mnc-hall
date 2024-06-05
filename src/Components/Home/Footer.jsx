@@ -1,7 +1,4 @@
-/* eslint-disable no-unused-vars */
-import React from 'react';
-import { RiFacebookFill } from 'react-icons/ri';
-
+// import { RiFacebookFill } from 'react-icons/ri';
 export default function Footer() {
     return (
         <>

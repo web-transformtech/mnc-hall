@@ -190,7 +190,6 @@ export default function ContactDetails() {
                     </div>
                 </div>
             </div> */}
-
             <div id="contact">
                 <div className="2xl:flex xl:flex lg:flex lge:flex mdlg:block md:block mdsm:block sm:block w-full container mx-auto 2xl:px-0 xl:px-0 lg:px-0 lge:px-0 mdlg:px-20 md:px-20 mdsm:px-10 sm:px-10">
                     <div className="bg-primary w-full lg:rounded-l-md sm:rounded-md h-[300px] mdsm:h-full sm:h-full mdlg:mb-6 md:mb-6 mdsm:mb-6 sm:mb-5">
