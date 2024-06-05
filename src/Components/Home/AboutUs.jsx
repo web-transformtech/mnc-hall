@@ -1,5 +1,3 @@
-
-
 import About from '../../assets/Home/hall/About.jpg';
 
 export default function AboutUs() {
@@ -41,8 +39,6 @@ export default function AboutUs() {
                     </div>
                 </div>
             </div>
-         
-           
         </div>
     );
 }

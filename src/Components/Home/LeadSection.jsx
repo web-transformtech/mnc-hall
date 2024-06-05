@@ -2,7 +2,6 @@
 import React from 'react';
 
 export default function LeadSection() {
-   
     return (
         <>
             <div className=" container mx-auto pb-16" id="team">
@@ -27,10 +26,9 @@ export default function LeadSection() {
                         />
                         <h2 className=" text-center text-h2 text-black font-semibold pt-2 ">Samanue </h2>
                         <div className="text-center pt-2">
-                        I attended a wedding reception at this auditorium, and it was fantastic! The venue was
-beautifully decorated, creating a warm and inviting atmosphere. The facilities were excellent,
-and the staff were attentive and accommodating. Overall, it was a wonderful experience. I highly
-recommend it for any event.
+                            I attended a wedding reception at this auditorium, and it was fantastic! The venue was beautifully decorated, creating a
+                            warm and inviting atmosphere. The facilities were excellent, and the staff were attentive and accommodating. Overall, it
+                            was a wonderful experience. I highly recommend it for any event.
                         </div>
                     </div>
 
@@ -41,9 +39,8 @@ recommend it for any event.
                         />
                         <h2 className=" text-center text-h2 text-black font-semibold pt-2 ">Vidhya Selvaraj </h2>
                         <div className="text-center pt-2">
-                        Very spacious Kalyana Mandapam. Our wedding on February 11 and 12, 2021, had a large
-stage where close relatives could witness the ceremony. The outdoor space for photoshoots
-was fantastic, and parking made it convenient.
+                            Very spacious Kalyana Mandapam. Our wedding on February 11 and 12, 2021, had a large stage where close relatives could
+                            witness the ceremony. The outdoor space for photoshoots was fantastic, and parking made it convenient.
                         </div>
                     </div>
                 </div>
@@ -79,8 +76,6 @@ was fantastic, and parking made it convenient.
 
      
     </div> */}
-
-          
         </>
     );
 }

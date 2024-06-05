@@ -14,7 +14,7 @@ export default function Home() {
             <AboutUs />
             <Gallery />
             <LeadSection />
-            <ContactDetails/>
+            <ContactDetails />
             <Footer />
         </div>
     );
