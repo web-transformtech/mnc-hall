@@ -1,6 +1,7 @@
 /* eslint-disable no-unused-vars */
 import React from 'react';
 import Noprofile from '../../assets/Home/noprofile.webp';
+import NoprofileFemale from '../../assets/Home/noprofilefemale.webp';
 export default function LeadSection() {
     return (
         <>
@@ -25,7 +26,7 @@ export default function LeadSection() {
                         </div>
                     </div>
                     <div className=" p-3">
-                        <img src={Noprofile} className=" h-[200px] w-[200px] rounded-full object-cover mx-auto" />
+                        <img src={NoprofileFemale} className=" h-[200px] w-[200px] rounded-full object-cover mx-auto" />
                         <h2 className=" text-center text-h2 text-black font-semibold pt-2 ">Vidhya Selvaraj </h2>
                         <div className="text-center pt-2">
                             Very spacious Kalyana Mandapam. Our wedding on February 11 and 12, 2021, had a large stage where close relatives could
