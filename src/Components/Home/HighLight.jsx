@@ -4,10 +4,10 @@ export default function HighLight() {
     return (
         <section className="  ">
             <div className=" relative h-ful">
-                <div className=" absolute h-full bg-[#3f3f3f8c] w-full top-0 py-32">
+                <div className=" absolute h-full bg-[#000000c4] w-full flex justify-center items-center top-0 py-32">
                     <div className=" container mx-auto h-ful">
-                        <h1 className=' text-[64px] Macondo pb-6 text-center sm:px-2  text-primary font-semibold'>Celebration Hub</h1>
-                        <h2 className=" text-[50px] Macondo w-[70%] mx-auto text-white font-semibold text-center">
+                        <h1 className=' text-[50px] Macondo pb-6 text-center sm:px-2  text-secondary font-semibold'>Celebration Hub</h1>
+                        <h2 className=" text-[40px] Macondo w-[70%] sm:w-[90%] mx-auto text-white font-semibold sm:text-[30px] text-center">
                             "Experience timeless elegance at our versatile event venue, perfect for weddings, receptions, and all your special
                             occasions. Book now and create unforgettable memories in a setting tailored to your dreams."
                         </h2>

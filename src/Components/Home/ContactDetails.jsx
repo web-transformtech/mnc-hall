@@ -113,7 +113,7 @@ export default function ContactDetails() {
             <div className="  py-10  lg:h-[400px] md:h-auto sm:h-auto " id="contact">
                 <div className=" grid sm:px-4  relative lg:grid-cols-3 md:grid-cols-1 md:px-4 sm:grid-cols-1">
                     <div className="relative lg:w-full md:w-[50%] sm:w-[90%] mx-auto">
-                        <div className=" bg-primary my-6 sm:my-4 lg:absolute  sm:relative md:relative sm:right-0 lg:right-[-40px] md:right-0 w-full  z-[-2] rounded-md p-10">
+                        <div className=" bg-primary my-6 sm:my-4 lg:absolute  sm:relative md:relative sm:right-0 lg:right-[-40px] md:right-0 w-full   rounded-md p-10">
                             <div className=" text-white font-semibold text-center tracking-wide text-[24px]">
                                 Contact <span className=" font-semibold">Details </span>
                             </div>
@@ -198,7 +198,7 @@ export default function ContactDetails() {
                     </div>
 
                     <div className="relative lg:w-full md:w-[50%] sm:w-[90%] mx-auto ">
-                        <div className=" bg-peacockGreen  lg:absolute  sm:relative md:relative my-4 sm:left-0 lg:left-[-40px] md:left-0 w-full  z-[-2] rounded-md p-10">
+                        <div className=" bg-peacockGreen  lg:absolute  sm:relative md:relative my-4 sm:left-0 lg:left-[-40px] md:left-0 w-full   rounded-md p-10">
                             <div className=" text-white font-semibold mb-4 text-center tracking-wide text-[24px]">
                                 Our <span className=" font-semibold">Location </span>
                             </div>
