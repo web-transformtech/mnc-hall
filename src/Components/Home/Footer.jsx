@@ -7,20 +7,19 @@ export default function Footer() {
                     <a className="hover:text-gray-900" href="#home">
                         Home
                     </a>
-                    <a className="hover:text-gray-900" href="#about">
+                    <a className="hover:text-gray-900" href="#aboutus">
                         About
                     </a>
-                    <a className="hover:text-gray-900" href="#services">
+                    <a className="hover:text-gray-900" href="#infrawehave">
                         Infra We Have
                     </a>
-                    <a className="hover:text-gray-900" href="#services">
+                    <a className="hover:text-gray-900" href="#team">
                         Teams
                     </a>
                     <a className="hover:text-gray-900" href="#contact">
                         Contact
                     </a>
                 </nav>
-
                 <div className="flex justify-center space-x-5">
                     <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
                         <img src="https://img.icons8.com/fluent/30/000000/facebook-new.png" />
