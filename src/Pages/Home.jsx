@@ -29,6 +29,7 @@ export default function Home() {
                     <Hero />
                     <AboutUs />
                     <Info />
+                    {/* <Gallery /> */}
                     <Team />
                     <HighLight />
                     <ContactDetails />

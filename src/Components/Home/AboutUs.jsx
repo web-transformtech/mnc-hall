@@ -1,4 +1,4 @@
-import About from '../../assets/Home/hall/About.jpg';
+import About from '../../assets/Home/hall/hallimg.jpg';
 export default function AboutUs() {
     return (
         <div id="aboutus">
