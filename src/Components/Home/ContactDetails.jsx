@@ -63,8 +63,11 @@ export default function ContactDetails() {
         setVaildStatus(true);
         if (errors.name === true && errors.Phonenumber === true && errors.email === true) {
             setSubmitDisable(true);
+            // const URL = `https://rvscas.com/api/mncvel`;
+            const URL = `http://172.16.22.6:7000/api/mncvel`;
+
             axios
-                .post('https://rvscas.com/api/createciiform', data)
+                .post(URL, data)
                 .then((res) => {
                     setSubmitDisable(false);
                     console.log('Success');
@@ -238,11 +241,18 @@ export default function ContactDetails() {
                             </div>
                             <div>
                                 <input
-                                    type="number"
+                                    type="text"
                                     onChange={(e) => handleChange(e)}
                                     name="Phonenumber"
                                     placeholder="Number"
                                     className=" py-2 px-3 w-full mt-4"
+                                    onKeyPress={(e) => {
+                                        if (!/^[0-9]/.test(e.key)) {
+                                            e.preventDefault();
+                                        }
+                                    }}
+                                    maxLength={10}
+                                    minLength={10}
                                 />
 
                                 {vaildStatus ? <div className=" text-sm  text-left text-[red]">{errors.Phonenumber}</div> : null}
@@ -270,7 +280,6 @@ export default function ContactDetails() {
                                 width="100%"
                                 height="180"
                                 style={{}}
-                                allowfullscreen=""
                                 loading="lazy"
                             ></iframe>
                         </div>

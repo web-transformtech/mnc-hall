@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 import { useState } from 'react';
 import Building from './../../assets/Home/mnc/building.png';
 import Table from './../../assets/Home/mnc/table.png';
@@ -26,7 +25,7 @@ export default function Hero() {
                             <MdCancel onClick={() => handleNav()} className="text-white hover:text-secondary cursor-pointer" />
                         </div>
                         <div className="text-white py-0">
-                            <img src={Logo} />
+                            <img src={SMLogo} />
                         </div>
                         <div></div>
                         <div className="=  p-4">
@@ -96,20 +95,24 @@ export default function Hero() {
                             </div>
                             <div className="container mx-auto h-full">
                                 <div className="grid grid-cols-1 gap-4 h-full">
-                                    <div className="h-full">
-                                        <div className="h-full px-8 flex justify-center items-center">
+                                    <div className="h-full sm:absolute sm:top-0">
+                                        <div className="h-full flex justify-center items-center">
                                             <div className="block">
                                                 <div className="flex justify-center">
-                                                    <img
-                                                        src={Logo}
-                                                        alt="MNC Vel Logo"
-                                                        className="2xl:block xl:block lg:block lge:block mdlg:block md:block mdsm:hidden sm:hidden"
-                                                    />
-                                                    <img
-                                                        src={SMLogo}
-                                                        alt="MNC Vel Logo"
-                                                        className="2xl:hidden xl:hidden lg:hidden lge:hidden mdlg:hidden md:hidden mdsm:block sm:block"
-                                                    />
+                                                    <a href="">
+                                                        <img
+                                                            src={Logo}
+                                                            alt="MNC Vel Logo"
+                                                            className="2xl:block xl:block lg:block lge:block mdlg:block md:block mdsm:hidden sm:hidden"
+                                                        />
+                                                    </a>
+                                                    <a href="">
+                                                        <img
+                                                            src={SMLogo}
+                                                            alt="MNC Vel Logo"
+                                                            className="2xl:hidden xl:hidden lg:hidden lge:hidden mdlg:hidden md:hidden mdsm:block sm:block"
+                                                        />
+                                                    </a>
                                                 </div>
                                                 <h1 className="text-secondary text-center 2xl:text-6xl xl:text-6xl lg:text-6xl lge:text-6xl md:text-5xl mdsm:text-4xl sm:text-xl font-semibold">
                                                     MNC Vel Kalyana Mandapam
