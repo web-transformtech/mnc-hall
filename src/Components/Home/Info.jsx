@@ -12,7 +12,7 @@ import '../../App.css';
 import { Navigation, Pagination, Mousewheel, Keyboard } from 'swiper/modules';
 
 import DinnerHall from '../../assets/Home/hall/Dinner Hall.jpg';
-import GuestRoom from '../../assets/Home/hall/Guest Room.jpg';
+import GuestRoom from '../../assets/Home/hall/Guest Room1.png';
 import CarPark from '../../assets/Home/hall/car-park.jpg';
 import HallBackground from '../../assets/Home/about/hall-background.jpg';
 import Building from './../../assets/Home/mnc/building.png';
@@ -34,7 +34,6 @@ export default function Info() {
                             </div>
                         </div>
                         <div className=" pt-[140px]">
-                            
                             <Swiper
                                 slidesPerView={4}
                                 spaceBetween={50}
@@ -138,7 +137,7 @@ export default function Info() {
                 </div>
 
                 <div className=" py-10">
-                    <div className=''></div>
+                    <div className=""></div>
                 </div>
             </section>
         </>

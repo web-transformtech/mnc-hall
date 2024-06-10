@@ -10,7 +10,7 @@ import SMLogo from '../../assets/Home/logo.png';
 import { RiAlignLeft } from 'react-icons/ri';
 import { MdCancel } from 'react-icons/md';
 // import Hall from "../../assets/Home/about/hall.png";
-import Hall from '../../assets/Home/hall/mnc_hall.png';
+import Hall from '../../assets/Home/hall/banner.png';
 export default function Hero() {
     const [navbarState, setNavBar] = useState(false);
     const handleNav = () => {

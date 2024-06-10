@@ -11,11 +11,15 @@ export default function ContactDetails() {
         name: '',
         Phonenumber: '',
         email: '',
+        eventname: '',
+        eventdate: '',
     });
     const [errors, setErrors] = useState({
         name: '',
         Phonenumber: '',
         email: '',
+        eventname: '',
+        eventdate: '',
     });
     const handleChange = (e) => {
         const { name, value } = e.target;
@@ -26,6 +30,7 @@ export default function ContactDetails() {
     };
     if (vaild === true) {
         let regex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
+        let Number = /^[6-9]\d{9}$/;
         if (data.name === '') {
             errors.name = 'required';
         } else if (data.name === undefined) {
@@ -37,6 +42,8 @@ export default function ContactDetails() {
             errors.Phonenumber = 'required';
         } else if (data.Phonenumber === undefined) {
             errors.Phonenumber = 'required';
+        } else if (!Number.test(data.Phonenumber)) {
+            errors.Phonenumber = 'Enter Correct Number';
         } else if (data.Phonenumber.length < 10 || data.Phonenumber.length > 20) {
             errors.Phonenumber = 'vaild required';
         } else {
@@ -51,49 +58,67 @@ export default function ContactDetails() {
         } else {
             errors.email = true;
         }
-        if (data.Inst_CompanyName === '') {
-            errors.Inst_CompanyName = 'required';
-        } else if (data.Inst_CompanyName === undefined) {
-            errors.Inst_CompanyName = 'required';
+        if (data.eventname === '') {
+            errors.eventname = 'Event Name is Required';
+        } else if (data.eventname === undefined) {
+            errors.eventname = 'Event Name is Required';
         } else {
-            errors.Inst_CompanyName = true;
+            errors.eventname = true;
+        }
+        if (data.eventdate === '') {
+            errors.eventdate = 'Event Date is Required';
+        } else if (data.eventdate === undefined) {
+            errors.eventdate = 'Event Date is Required';
+        } else {
+            errors.eventdate = true;
         }
     }
     const handleSubmit = (e) => {
+        e.preventDefault();
         setVaildStatus(true);
-        if (errors.name === true && errors.Phonenumber === true && errors.email === true) {
+        if (errors.name === true && errors.Phonenumber === true && errors.email === true && errors.eventname === true && errors.eventdate === true) {
             setSubmitDisable(true);
-            // const URL = `https://rvscas.com/api/mncvel`;
-            const URL = `http://172.16.22.6:7000/api/mncvel`;
-
+            const myjson = {
+                name: data.name,
+                email: data.email,
+                phone: data.Phonenumber,
+                eventname: data.eventname,
+                eventdate: data.eventdate,
+            };
+            // const URL = `https://mncvel.com/api/mncvel`;
+            const URL = `http://172.16.22.6:8000/api/mncvel`;
             axios
-                .post(URL, data)
+                .post(URL, myjson)
                 .then((res) => {
-                    setSubmitDisable(false);
-                    console.log('Success');
-                    console.log(res);
                     setData({
                         name: '',
                         Phonenumber: '',
                         email: '',
+                        eventname: '',
+                        eventdate: '',
                     });
                     setErrors({
                         name: '',
                         Phonenumber: '',
                         email: '',
+                        eventname: '',
+                        eventdate: '',
                     });
+                    setVaildStatus(false);
+                    setSubmitDisable(false);
+                    console.log('Success');
+                    console.log(res);
+                    setThankyou('Thank you we will Contact Soon..');
+                    setTimeout(() => {
+                        setThankyou('');
+                    }, 5000);
                 })
                 .catch((err) => {
                     console.log(err);
                     setSubmitDisable(false);
                     alert('Error');
-                    setThankyou('Thank you we will Contact Soon..');
-                    setTimeout(() => {
-                        setThankyou('');
-                    }, 3000);
                 });
         }
-        e.preventDefault();
     };
     return (
         <>
@@ -214,7 +239,7 @@ export default function ContactDetails() {
                             </div>
                         </div>
                     </div>
-                    <div className="bg-secondary relative 2xl:-top-7 xl:-top-7 lg:-top-7 lge:-top-7 mdlg:-top-0 md:top-0 mdsm:top-0 sm:top-0 w-full rounded-md mdlg:mb-6 md:mb-6 mdsm:mb-6 sm:mb-5">
+                    <div className="bg-secondary relative 2xl:-top-20 xl:-top-20 lg:-top-20 lge:-top-20 mdlg:-top-0 md:top-0 mdsm:top-0 sm:top-0 w-full rounded-md mdlg:mb-6 md:mb-6 mdsm:mb-6 sm:mb-5">
                         <div className="2xl:p-10 xl:p-10 lg:p-10 lge:p-10 lgmd:p-10 md:p-10 mdsm:p-5 sm:p-5">
                             <div className=" text-white font-semibold mb-1 text-center tracking-wide text-h3 sm:text-h5">
                                 Contact <span className=" font-semibold">us </span>
@@ -223,6 +248,7 @@ export default function ContactDetails() {
                                 <input
                                     type="text"
                                     name="name"
+                                    value={data.name}
                                     onChange={(e) => handleChange(e)}
                                     placeholder="Name"
                                     className=" py-2 px-3 w-full mt-4"
@@ -232,6 +258,7 @@ export default function ContactDetails() {
                             <div>
                                 <input
                                     type="email"
+                                    value={data.email}
                                     onChange={(e) => handleChange(e)}
                                     name="email"
                                     placeholder="email"
@@ -242,6 +269,7 @@ export default function ContactDetails() {
                             <div>
                                 <input
                                     type="text"
+                                    value={data.Phonenumber}
                                     onChange={(e) => handleChange(e)}
                                     name="Phonenumber"
                                     placeholder="Number"
@@ -256,6 +284,28 @@ export default function ContactDetails() {
                                 />
 
                                 {vaildStatus ? <div className=" text-sm  text-left text-[red]">{errors.Phonenumber}</div> : null}
+                            </div>
+                            <div>
+                                <input
+                                    type="text"
+                                    value={data.eventname}
+                                    onChange={(e) => handleChange(e)}
+                                    name="eventname"
+                                    placeholder="Event Name"
+                                    className=" py-2 px-3 w-full mt-4"
+                                />
+                                {vaildStatus ? <div className=" text-sm  text-left text-[red]">{errors.eventname}</div> : null}
+                            </div>
+                            <div>
+                                <input
+                                    type="date"
+                                    value={data.eventdate}
+                                    onChange={(e) => handleChange(e)}
+                                    name="eventdate"
+                                    placeholder="Select Event Date"
+                                    className=" py-2 px-3 w-full mt-4"
+                                />
+                                {vaildStatus ? <div className=" text-sm  text-left text-[red]">{errors.eventdate}</div> : null}
                             </div>
                             <div className=" pt-4">
                                 <button onClick={(e) => handleSubmit(e)} className=" bg-peacockGreen w-full py-3 text-white">
