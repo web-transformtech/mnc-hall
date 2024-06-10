@@ -10,7 +10,6 @@ import Team from '../Components/Home/Team';
 import { useEffect, useState } from 'react';
 export default function Home() {
     const [loader, setLoader] = useState(true);
-
     useEffect(() => {
         setTimeout(() => {
             setLoader(false);
@@ -20,8 +19,8 @@ export default function Home() {
         <div>
             {loader ? (
                 <>
-                    <div className={` model-popup`}>
-                        <div className=" block">{/* <img src="./assets/Home/logo2.png" alt="M"/> */}</div>
+                    <div className={`model-popup`}>
+                        <div className="block">{/* <img src="./assets/Home/logo2.png" alt="M"/> */}</div>
                         <span className="loader"></span>
                     </div>
                 </>

@@ -23,10 +23,6 @@ export default function HighLight() {
                 /> */}
                 <img src={Celebration} className="h-[100vh] object-cover w-full" alt="celebrate" />
             </div>
-
-
-      
         </section>
-
     );
 }

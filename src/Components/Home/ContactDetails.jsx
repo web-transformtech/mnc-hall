@@ -85,7 +85,7 @@ export default function ContactDetails() {
                 eventname: data.eventname,
                 eventdate: data.eventdate,
             };
-            // const URL = `https://mncvel.com/api/mncvel`;
+            // const URL = `http://backend.mncvel.com/api/mncvel`;
             const URL = `http://172.16.22.6:8000/api/mncvel`;
             axios
                 .post(URL, myjson)
@@ -329,8 +329,6 @@ export default function ContactDetails() {
                                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3915.8358923974824!2d77.11449447402092!3d11.050927754072571!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba858fcf00a61dd%3A0xe2d29608397c7faa!2sMNC%20Vel%20Kalyanamandapam!5e0!3m2!1sen!2sin!4v1710917236505!5m2!1sen!2sin"
                                 width="100%"
                                 height="180"
-                                style={{}}
-                                loading="lazy"
                             ></iframe>
                         </div>
                     </div>
