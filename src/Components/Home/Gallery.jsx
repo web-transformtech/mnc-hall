@@ -77,6 +77,7 @@ export default function Gallery() {
                                     </div>
                                 </div>
                             </SwiperSlide>
+                            {/* 2 */}
                             <SwiperSlide>
                                 <div>
                                     <img src={DinnerHall} className=" sm:h-[40vh] h-[400px] object-cover sm:object-cover w-full rounded-md" />
@@ -92,6 +93,7 @@ export default function Gallery() {
                                     </div>
                                 </div>
                             </SwiperSlide>
+                            {/* 3 */}
                             <SwiperSlide>
                                 <div>
                                     <img src={GuestRoom} className=" sm:h-[40vh] h-[400px] object-cover sm:object-cover w-full rounded-md" />
@@ -107,6 +109,7 @@ export default function Gallery() {
                                     </div>
                                 </div>
                             </SwiperSlide>
+                            {/* 4 */}
                             <SwiperSlide>
                                 <div>
                                     <img src={CarPark} className=" sm:h-[40vh] h-[400px] object-cover sm:object-cover w-full rounded-md" />

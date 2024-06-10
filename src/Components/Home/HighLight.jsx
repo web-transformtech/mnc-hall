@@ -6,7 +6,7 @@ export default function HighLight() {
                 <div className="absolute h-full bg-[#3f3f3f81] w-full top-0 ">
                     <div className="container mx-auto h-full flex items-center justify-center">
                         <div>
-                            <h1 className="text-secondary font-semibold lg:text-[56px] lge:text-[56px] md:text-[40px] mdsm:text-[40px] sm:text-[40px] pb-6 text-center sm:px-2 ">
+                            <h1 className="text-secondary  font-semibold lg:text-[56px] lge:text-[56px] md:text-[40px] mdsm:text-[40px] sm:text-[40px] pb-6 text-center sm:px-2 ">
                                 Celebration Hub
                             </h1>
                             <h2 className="lg:text-[48px] lge:text-[48px] md:text-h1 mdsm:text-h1 sm:text-h4 w-[70%] mx-auto text-white text-center">
@@ -23,6 +23,10 @@ export default function HighLight() {
                 /> */}
                 <img src={Celebration} className="h-[100vh] object-cover w-full" alt="celebrate" />
             </div>
+
+
+      
         </section>
+
     );
 }

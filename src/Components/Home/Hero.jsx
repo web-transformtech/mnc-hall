@@ -21,7 +21,7 @@ export default function Hero() {
         <>
             {navbarState ? (
                 <>
-                    <div className=" bg-[#3b82f680] sm:block  z-10  fixed top-0 h-full w-full ">
+                    <div className=" bg-[#082149e8] sm:block  z-10  fixed top-0 h-full w-full ">
                         <div className="  flex justify-end p-4 ">
                             <MdCancel onClick={() => handleNav()} className="text-white hover:text-secondary cursor-pointer" />
                         </div>
