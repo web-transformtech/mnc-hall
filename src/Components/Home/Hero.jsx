@@ -9,8 +9,8 @@ import SMLogo from '../../assets/Home/logo.png';
 // import { Link } from 'react-router-dom';
 import { RiAlignLeft } from 'react-icons/ri';
 import { MdCancel } from 'react-icons/md';
-// import Hall from "../../assets/Home/about/hall.png";
-import Hall from '../../assets/Home/hall/banner.png';
+import Hall from '../../assets/Home/hall/banner2.png';
+// import Hall from '../../assets/Home/hall/banner.png';
 export default function Hero() {
     const [navbarState, setNavBar] = useState(false);
     const handleNav = () => {
@@ -97,20 +97,20 @@ export default function Hero() {
                                 <div className="grid grid-cols-1 gap-4 h-full">
                                     <div className="h-full sm:absolute sm:top-0">
                                         <div className="h-full flex justify-center items-center">
-                                            <div className="block">
+                                            <div className="block mdsm:-mt-[80px]">
                                                 <div className="flex justify-center">
                                                     <a href="">
                                                         <img
                                                             src={Logo}
                                                             alt="MNC Vel Logo"
-                                                            className="2xl:block xl:block lg:block lge:block mdlg:block md:block mdsm:hidden sm:hidden"
+                                                            className="2xl:block xl:block lg:block lge:block md:block mdsm:hidden sm:hidden"
                                                         />
                                                     </a>
                                                     <a href="">
                                                         <img
                                                             src={SMLogo}
                                                             alt="MNC Vel Logo"
-                                                            className="2xl:hidden xl:hidden lg:hidden lge:hidden mdlg:hidden md:hidden mdsm:block sm:block"
+                                                            className="2xl:hidden xl:hidden lg:hidden lge:hidden md:hidden mdsm:block sm:block"
                                                         />
                                                     </a>
                                                 </div>

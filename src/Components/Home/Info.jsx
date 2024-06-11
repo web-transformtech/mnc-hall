@@ -8,36 +8,36 @@ import 'swiper/css/pagination';
 import '../../App.css';
 // import required modules
 import { Navigation, Pagination, Mousewheel, Keyboard } from 'swiper/modules';
-import DinnerHall from '../../assets/Home/hall/Dinner Hall.jpg';
-import GuestRoom from '../../assets/Home/hall/Guest Room1.png';
-import CarPark from '../../assets/Home/hall/car-park.jpg';
+import DinnerHall from '../../assets/Home/hall/Dinner Hall.webp';
+import GuestRoom from '../../assets/Home/hall/Guest Room1.webp';
+import CarPark from '../../assets/Home/hall/car-park.webp';
 // import HallBackground from '../../assets/Home/about/hall-background.jpg';
 import Building from './../../assets/Home/mnc/building.png';
 import Table from './../../assets/Home/mnc/table.png';
 import Location from './../../assets/Home/mnc/location.png';
 import Parking from './../../assets/Home/mnc/parking.png';
-import BanquetHall from '../../assets/Home/hall/Banquet Halls.jpg';
+import BanquetHall from '../../assets/Home/hall/Banquet Halls.webp';
 export default function Info() {
     return (
         <>
-            <section className="pb-[300px] sm:pb-[200px] relative">
-                <div className=" h-[500px] background-image bg-no-repeat bg-cover bg-center">
+            <section className="pb-[200px] sm:pb-[200px] overflow-hidden">
+                <div className="background-image bg-no-repeat">
                     <div className="px-4 container mx-auto">
-                        <div className="absolute top-0">
-                            <div className=" text-white font-extralight tracking-wide text-[44px] sm:px-4 pt-8 pb-16 px-10">
+                        <div className="">
+                            <div className="text-white font-extralight tracking-wide text-[44px] sm:px-4 pt-8 pb-16 px-10">
                                 Infra
-                                <span className=" font-semibold"> we have </span>
+                                <span className="font-semibold"> we have </span>
                             </div>
                         </div>
-                        <div className="pt-[140px]">
+                        <div className="">
                             <Swiper
                                 slidesPerView={4}
                                 spaceBetween={50}
-                                cssMode={true}
+                                // cssMode={true}
                                 navigation={true}
-                                pagination={true}
-                                mousewheel={true}
-                                keyboard={true}
+                                // pagination={true}
+                                // mousewheel={true}
+                                // keyboard={true}
                                 breakpoints={{
                                     300: {
                                         slidesPerView: 1.2,
@@ -60,7 +60,7 @@ export default function Info() {
                                         spaceBetween: 20,
                                     },
                                 }}
-                                modules={[Navigation, Pagination, Mousewheel, Keyboard]}
+                                modules={[Navigation]}
                                 id="servicesSlider"
                                 className="mySwiper px-4"
                             >
@@ -136,6 +136,12 @@ export default function Info() {
                     <div className=""></div>
                 </div>
             </section>
+
+            {/* <section>
+                <div className="background-image bg-no-repeat bg-cover bg-center">
+                    <div>dsdsfsdfdfs</div>
+                </div>
+            </section> */}
         </>
     );
 }

@@ -1,54 +1,50 @@
 import { useState } from 'react';
 import '../../App.css';
 import Popup from './Popup';
+import Room from '../../assets/Home/GalleryImg/Guest Room1.webp';
+import two from '../../assets/Home/GalleryImg/2.webp';
+import three from '../../assets/Home/GalleryImg/3.webp';
+import park from '../../assets/Home/GalleryImg/hall.png';
+import hall2 from '../../assets/Home/GalleryImg/hall2.png';
+import six from '../../assets/Home/GalleryImg/6.webp';
 
-function Gallery() {
+export default function Gallery() {
     const [popupState, setPopupState] = useState(false);
-    const [data, setData] = useState([
+    popupState ? (document.body.style.overflow = 'hidden') : (document.body.style.overflow = 'auto');
+    const data = [
         {
             _id: 0,
-            img: 'https://images.pexels.com/photos/17032714/pexels-photo-17032714/free-photo-of-classic-car-on-street.jpeg',
+            img: Room,
             alt: 'alt',
         },
         {
             _id: 1,
-            img: 'https://images.pexels.com/photos/19578198/pexels-photo-19578198/free-photo-of-silhouette-of-bird-sitting-atop-lamppost-at-dusk.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+            img: two,
             alt: 'alt',
         },
         {
             _id: 2,
-            img: 'https://images.pexels.com/photos/17170380/pexels-photo-17170380/free-photo-of-snowed-mountains-over-green-valley.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+            img: three,
             alt: 'alt',
         },
         {
             _id: 3,
-            img: 'https://images.pexels.com/photos/17170380/pexels-photo-17170380/free-photo-of-snowed-mountains-over-green-valley.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+            img: park,
             alt: 'alt',
         },
         {
             _id: 4,
-            img: 'https://images.pexels.com/photos/18045900/pexels-photo-18045900/free-photo-of-silhouetted-mountains-under-a-starry-night-sky.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+            img: hall2,
             alt: 'alt',
         },
         {
             _id: 5,
-            img: 'https://images.pexels.com/photos/25007817/pexels-photo-25007817/free-photo-of-a-person-holding-a-dandelion-in-front-of-a-wall.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+            img: six,
             alt: 'alt',
         },
-        {
-            _id: 6,
-            img: 'https://images.pexels.com/photos/12177393/pexels-photo-12177393.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-            alt: 'alt',
-        },
-        {
-            _id: 7,
-            img: 'https://images.pexels.com/photos/19562913/pexels-photo-19562913/free-photo-of-scenic-view-of-a-mountain-range.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-            alt: 'alt',
-        },
-    ]);
-
+        
+    ];
     const [imageData, setImageData] = useState();
-
     const handleImage = (v, i) => {
         var dataImage = [];
         data?.forEach((el) => {
@@ -59,13 +55,11 @@ function Gallery() {
         setPopupState(!popupState);
         setImageData(dataImage);
     };
-
     const handlePopup = () => {
         setPopupState(!popupState);
     };
-    // console.log(imageData[0]?._id)
     return (
-        <div className="pb-20">
+        <div className="pb-32">
             <div className=" container mx-auto">
                 <Popup>
                     {popupState ? (
@@ -96,11 +90,21 @@ function Gallery() {
                                 <div onClick={() => handleImage(v, i)} className="group gallery-item mb-4 relative ">
                                     <div className="group-hover:bg-primary h-full ">
                                         <img src={v?.img} className="  w-full " />
-                                        <div className=" absolute top-0 h-full group-hover:bg-[#ffffff7a] w-full p-3  duration-300">
-                                            <div className=" group-hover:border-2 group-hover:h-full group-hover:w-full border-[#333] group-hover:border-white duration-300"></div>
+                                        <div className="absolute top-0 h-full group-hover:bg-[#ffffff7a] w-full p-3  duration-300">
+                                            <div className="group-hover:border-2 group-hover:h-full group-hover:w-full border-[#333] group-hover:border-white duration-300"></div>
                                         </div>
                                     </div>
                                 </div>
+                                {/* <div onClick={() => handleImage(v, i)} className="group gallery-item mb-4 relative">
+                                    <div className="group-hover:bg-primary h-full ">
+                                        <img src={v?.img} className="  w-full " />
+                                        <div className="absolute top-0 h-full bg-gradient-to-t from-[#0e0d0d] w-full p-3  duration-300">
+                                            <div className="border-2 h-full w-full border-white duration-300">
+                                                <p className="text-white h-full">hhjjkjkhjkh</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> */}
                             </>
                         );
                     })}
@@ -109,5 +113,3 @@ function Gallery() {
         </div>
     );
 }
-
-export default Gallery;

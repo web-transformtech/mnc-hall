@@ -22,8 +22,12 @@ html {
   background-image: url("./assets/Home/hall/background.png");
   height: 100vh;
 }   */
-.background-image {
+/* .background-image {
     background-image: url('./assets/Home/hall/backgroundhall.png');
+    height: 500px;
+} */
+.background-image {
+    background-image: url('./assets/Home/hall/backgroundhalll.png');
     height: 500px;
 }
 .border-box {

@@ -3,11 +3,11 @@ import AboutUs from '../Components/Home/AboutUs';
 import LeadSection from '../Components/Home/LeadSection';
 import ContactDetails from '../Components/Home/ContactDetails';
 import Footer from '../Components/Home/Footer';
-import Gallery from '../Components/Home/Gallery';
 import HighLight from '../Components/Home/HighLight';
 import Info from '../Components/Home/Info';
 import Team from '../Components/Home/Team';
 import { useEffect, useState } from 'react';
+import Gallery from '../Components/Home/Gallery';
 export default function Home() {
     const [loader, setLoader] = useState(true);
     useEffect(() => {
@@ -29,7 +29,7 @@ export default function Home() {
                     <Hero />
                     <AboutUs />
                     <Info />
-                    {/* <Gallery /> */}
+                    <Gallery />
                     <Team />
                     <HighLight />
                     <ContactDetails />
