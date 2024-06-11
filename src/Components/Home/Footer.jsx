@@ -1,5 +1,7 @@
 // import { RiFacebookFill } from 'react-icons/ri';
 export default function Footer() {
+    const date = new Date().getFullYear();
+    // console.log(date);
     return (
         <>
             <footer className="flex flex-col space-y-10 justify-center m-10 pt-6">
@@ -40,7 +42,7 @@ export default function Footer() {
                         <img src="https://img.icons8.com/fluent/30/000000/twitter.png" />
                     </a> */}
                 </div>
-                <p className="text-center text-gray-700 font-medium">&copy; 2022 Company Ltd. All rights reservered.</p>
+                <p className="text-center text-gray-700 font-medium">&copy; {date} MNC Vel Kalyana Mandapam. All rights reservered.</p>
             </footer>
         </>
     );
