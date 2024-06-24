@@ -2,7 +2,7 @@ import Noprofile from '../../assets/Home/noprofile.webp';
 import NoprofileFemale from '../../assets/Home/noprofilefemale.webp';
 export default function Team() {
     return (
-        <div className="container mx-auto pb-32">
+        <div className="container mx-auto pb-32" id="team">
             <div className="text-[36px] pb-6 text-center sm:px-2 text-primary font-semibold">Eventful Experiences Shared by Our Guests</div>
             <div className="grid lg:grid-cols-3 lge:grid-cols-3 md:grid-cols-2 mdsm:grid sm:grid-cols-1 lg:gap-10 lge:gap-10 md:gap-6 mdsm:gap-6 sm:gap-0">
                 <div className="p-3">

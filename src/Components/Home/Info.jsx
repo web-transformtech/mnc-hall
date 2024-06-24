@@ -12,7 +12,7 @@ import Parking from './../../assets/Home/mnc/parking.png';
 export default function Info() {
     return (
         <>
-            <section className="pb-[200px] sm:pb-[200px] overflow-hidden">
+            <section id="infrawehave" className="pb-[200px] sm:pb-[200px] overflow-hidden">
                 <div className="background-image bg-no-repeat">
                     <div className="px-4 container mx-auto">
                         <div className="">

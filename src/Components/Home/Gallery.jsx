@@ -60,7 +60,7 @@ export default function Gallery() {
         setPopupState(!popupState);
     };
     return (
-        <div className="pb-32" id="infrawehave">
+        <div className="pb-32" >
             <div className=" container mx-auto">
                 <div className="text-[36px] pt-6 pb-10 text-center sm:px-2  text-primary font-semibold">Gallery</div>
 

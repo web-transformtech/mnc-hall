@@ -22,7 +22,9 @@ export default function Hero() {
                             <MdCancel onClick={() => handleNav()} className="text-white hover:text-secondary cursor-pointer" />
                         </div>
                         <div className="text-white py-0">
-                            <img src={SMLogo} />
+                            <img src={SMLogo}  className=' mx-auto'/>
+                            <div className=' text-[24px] text-center font-semibold'> MNC Vel Kalyana Mandapam
+                                </div>
                         </div>
                         <div></div>
                         <div className="p-4">
@@ -58,6 +60,7 @@ export default function Hero() {
                     <div className="mdlg:h-[100vh] overflow-hidden ">
                         <div className="h-[100vh] overflow-hidden ">
                             <img src={Hall} className="kenburns-right h-[100vh] overflow-hidden object-cover w-full" />
+                            
                         </div>
                         <div className="absolute top-0 bg-[#00000061] w-full h-full">
                             <div className="lg:block lge:block md:hidden  mdsm:hidden sm:hidden absolute top-0 w-full px-8">
@@ -87,12 +90,12 @@ export default function Hero() {
                                 </div>
                             </div>
                             {/* Mobile View  */}
-                            <div className="lg:hidden p-5 lge:hidden md:block mdsm:block sm:block">
+                            <div className="lg:hidden p-5 lge:hidden md:block mdsm:block">
                                 {navbarState ? null : <RiAlignLeft onClick={() => handleNav()} className="text-white cursor-pointer text-h1" />}
                             </div>
                             <div className="container mx-auto h-full">
                                 <div className="grid grid-cols-1 gap-4 h-full">
-                                    <div className="h-full sm:absolute sm:top-0">
+                                    <div className="h-full">
                                         <div className="h-full flex justify-center items-center">
                                             <div className="block mdsm:-mt-[80px]">
                                                 <div className="flex justify-center">

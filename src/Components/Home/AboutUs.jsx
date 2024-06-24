@@ -27,10 +27,10 @@ export default function AboutUs() {
                         <div className=" block">
                             <div className="text-[36px] pb-2 text-primary font-semibold">About MNC</div>
                             <p>
-                                MNC Vel Kalyana Mandapam in Coimbatore welcomes you to its vibrant ambiance, nestled near sulur. With subtle ceiling lights and upscale decor, it&#39;s perfect for dream weddings and receptions.
-                                Indulge in delightful cuisine from in-house caterers and enjoy seamless event planning with their decor services.
-                                Experience unmatched quality and warmth at this centrally located venue, ensuring cherished memories for every
-                                occasion.
+                                MNC Vel Kalyana Mandapam in Coimbatore welcomes you to its vibrant ambiance, nestled near sulur. With subtle ceiling
+                                lights and upscale decor, it&#39;s perfect for dream weddings and receptions. Indulge in delightful cuisine from
+                                in-house caterers and enjoy seamless event planning with their decor services. Experience unmatched quality and warmth
+                                at this centrally located venue, ensuring cherished memories for every occasion.
                             </p>
                         </div>
                     </div>
