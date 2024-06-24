@@ -7,6 +7,8 @@ import three from '../../assets/Home/GalleryImg/3.webp';
 import park from '../../assets/Home/GalleryImg/hall.png';
 import hall2 from '../../assets/Home/GalleryImg/hall2.png';
 import six from '../../assets/Home/GalleryImg/6.webp';
+import { MdOutlineClose } from 'react-icons/md';
+import { BsBoxArrowUpRight } from "react-icons/bs";
 
 export default function Gallery() {
     const [popupState, setPopupState] = useState(false);
@@ -42,7 +44,6 @@ export default function Gallery() {
             img: six,
             alt: 'alt',
         },
-        
     ];
     const [imageData, setImageData] = useState();
     const handleImage = (v, i) => {
@@ -59,21 +60,24 @@ export default function Gallery() {
         setPopupState(!popupState);
     };
     return (
-        <div className="pb-32">
+        <div className="pb-32" id="infrawehave">
             <div className=" container mx-auto">
+                <div className="text-[36px] pt-6 pb-10 text-center sm:px-2  text-primary font-semibold">Gallery</div>
+
                 <Popup>
                     {popupState ? (
                         <div className="model-popup ">
-                            <div className="w-[50%]">
+                            <div className="w-[50%]  sm:px-4 sm:w-[100%]">
                                 {imageData?.map((v, i) => {
-                                    console.log('Hello');
                                     return (
-                                        <div>
-                                            <div className=" flex justify-end">
-                                                <button onClick={() => handlePopup()}>Close</button>
+                                        <div className=" relative">
+                                            <div className="w-full p-2 flex justify-end  top-0">
+                                                <button onClick={() => handlePopup()}>
+                                                    <MdOutlineClose className=" text-[20px] text-[#333] hover:text-[#cf021a]" />
+                                                </button>
                                             </div>
 
-                                            <img src={v?.img} alt={v?.alt} className="h-[80vh] w-full object-cover" />
+                                            <img src={v?.img} alt={v?.alt} className="h-[80vh]  w-full object-cover" />
                                             {v?._id}
                                         </div>
                                     );
@@ -82,29 +86,24 @@ export default function Gallery() {
                         </div>
                     ) : null}
                 </Popup>
-                <div className="gallery  ">
+                <div className="gallery  px-4 ">
                     {data?.map((v, i) => {
                         console.log(i % 3 == 0);
                         return (
                             <>
-                                <div onClick={() => handleImage(v, i)} className="group gallery-item mb-4 relative ">
+                                <div onClick={() => handleImage(v, i)} className="group  cursor-pointer gallery-item mb-4 relative ">
                                     <div className="group-hover:bg-primary h-full ">
                                         <img src={v?.img} className="  w-full " />
                                         <div className="absolute top-0 h-full group-hover:bg-[#ffffff7a] w-full p-3  duration-300">
                                             <div className="group-hover:border-2 group-hover:h-full group-hover:w-full border-[#333] group-hover:border-white duration-300"></div>
                                         </div>
-                                    </div>
-                                </div>
-                                {/* <div onClick={() => handleImage(v, i)} className="group gallery-item mb-4 relative">
-                                    <div className="group-hover:bg-primary h-full ">
-                                        <img src={v?.img} className="  w-full " />
-                                        <div className="absolute top-0 h-full bg-gradient-to-t from-[#0e0d0d] w-full p-3  duration-300">
-                                            <div className="border-2 h-full w-full border-white duration-300">
-                                                <p className="text-white h-full">hhjjkjkhjkh</p>
+                                        <div className=" group-hover:block hidden">
+                                            <div className=" absolute top-0 h-full flex justify-center items-center w-full   ">
+                                                <BsBoxArrowUpRight className=' font-semibold text-[30px]  text-peacockGreen'/>
                                             </div>
                                         </div>
                                     </div>
-                                </div> */}
+                                </div>
                             </>
                         );
                     })}

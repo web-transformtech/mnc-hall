@@ -9,7 +9,7 @@ export default function AboutUs() {
                         <div className="absolute h-[150px] rounded-r-[20px] rounded-b-[20px] top-0 z-[-1] bg-[#ededed] w-[200px]"></div>
                         <img
                             src={About}
-                            className="w-[90%] sm:w-full object-cover lg:h-[400px] md:h-[600px] mdsm:h-[600px]  sm:mx-0  rounded-r-[40px] rounded-b-[40px] mt-[20px]  my-auto mx-auto"
+                            className="w-[90%] sm:w-full object-cover lg:h-[400px] md:h-[600px] mdsm:h-[600px] sm:h-[500px]  sm:mx-0  rounded-r-[40px] rounded-b-[40px] mt-[20px]  my-auto mx-auto"
                         />
                         <div className="bg-primary absolute sm:w-[90%] sm:relative md:right-0 mdsm:right-0 rounded-md sm:top-[10%] sm:left-4  sm:right-0 -bottom-[4%] lg:right-[-90px] flex text-white p-4 ">
                             <div className="flex  border-dashed w-full sm:justify-center rounded-md border-2 border-sky-500 px-10">

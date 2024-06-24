@@ -16,11 +16,6 @@ export default function HighLight() {
                         </div>
                     </div>
                 </div>
-                {/* <img
-                    src={`https://images.pexels.com/photos/7591515/pexels-photo-7591515.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1`}
-                    className="h-[100vh] object-cover w-full"
-                    alt="celebrate"
-                /> */}
                 <img src={Celebration} className="h-[100vh] object-cover w-full" alt="celebrate" />
             </div>
         </section>

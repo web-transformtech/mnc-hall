@@ -30,6 +30,33 @@ html {
     background-image: url('./assets/Home/hall/backgroundhalll.png');
     height: 500px;
 }
+
+.banquet-hall {
+    background-image: url('./assets/Home/hall/info/hall.webp');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.dinner-hall{
+    background-image: url('./assets/Home/hall/info/dinner-hall.webp');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.guest-room{
+    background-image: url('./assets/Home/hall/info/guest-room.webp');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.car-parking{
+    background-image: url('./assets/Home/hall/info/car-park.webp');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
 .border-box {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }

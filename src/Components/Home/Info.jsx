@@ -1,22 +1,14 @@
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
-// Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-// import './styles.css';
 import '../../App.css';
-// import required modules
-import { Navigation, Pagination, Mousewheel, Keyboard } from 'swiper/modules';
-import DinnerHall from '../../assets/Home/hall/Dinner Hall.webp';
-import GuestRoom from '../../assets/Home/hall/Guest Room1.webp';
-import CarPark from '../../assets/Home/hall/car-park.webp';
-// import HallBackground from '../../assets/Home/about/hall-background.jpg';
+import { Navigation } from 'swiper/modules';
 import Building from './../../assets/Home/mnc/building.png';
 import Table from './../../assets/Home/mnc/table.png';
 import Location from './../../assets/Home/mnc/location.png';
 import Parking from './../../assets/Home/mnc/parking.png';
-import BanquetHall from '../../assets/Home/hall/Banquet Halls.webp';
 export default function Info() {
     return (
         <>
@@ -66,7 +58,8 @@ export default function Info() {
                             >
                                 <SwiperSlide>
                                     <div>
-                                        <img src={BanquetHall} className=" sm:h-[40vh] h-[400px] object-cover sm:object-cover w-full rounded-md" />
+                                        <div className=" banquet-hall sm:h-[40vh] h-[400px] object-cover sm:object-cover w-full rounded-md"></div>
+
                                         <div className="p-4 sm:bg-white relative rounded-b-lg">
                                             <div className=" absolute top-[-34px] right-[20px] bg-[#b2444d] rounded-md p-1.5">
                                                 <img src={Building} className="h-[50px]" />
@@ -82,7 +75,7 @@ export default function Info() {
 
                                 <SwiperSlide>
                                     <div>
-                                        <img src={DinnerHall} className=" sm:h-[40vh] h-[400px] object-cover sm:object-cover w-full rounded-md" />
+                                        <div className=" dinner-hall sm:h-[40vh] h-[400px] rounded-md"></div>
                                         <div className="p-4 sm:bg-white relative rounded-b-lg">
                                             <div className=" absolute top-[-34px] right-[20px] bg-[#fba732] rounded-md p-1.5">
                                                 <img src={Table} className="h-[50px]" />
@@ -98,7 +91,8 @@ export default function Info() {
 
                                 <SwiperSlide>
                                     <div>
-                                        <img src={GuestRoom} className=" sm:h-[40vh] h-[400px] object-cover sm:object-cover w-full rounded-md" />
+                                        <div className=" guest-room sm:h-[40vh] h-[400px] rounded-md"></div>
+
                                         <div className="p-4 sm:bg-white relative rounded-b-lg">
                                             <div className=" absolute top-[-34px] right-[20px] bg-[#4ea2b3] rounded-md p-1.5">
                                                 <img src={Location} className="h-[50px]" />
@@ -114,7 +108,8 @@ export default function Info() {
 
                                 <SwiperSlide>
                                     <div>
-                                        <img src={CarPark} className=" sm:h-[40vh] h-[400px] object-cover sm:object-cover w-full rounded-md" />
+                                        <div className=" car-parking sm:h-[40vh] h-[400px] rounded-md"></div>
+
                                         <div className="p-4 sm:bg-white relative rounded-b-lg">
                                             <div className=" absolute top-[-34px] right-[20px] bg-[#353978] rounded-md p-1.5">
                                                 <img src={Parking} className="h-[50px]" />
@@ -136,12 +131,6 @@ export default function Info() {
                     <div className=""></div>
                 </div>
             </section>
-
-            {/* <section>
-                <div className="background-image bg-no-repeat bg-cover bg-center">
-                    <div>dsdsfsdfdfs</div>
-                </div>
-            </section> */}
         </>
     );
 }

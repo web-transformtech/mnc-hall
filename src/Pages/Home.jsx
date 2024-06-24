@@ -20,13 +20,13 @@ export default function Home() {
             {loader ? (
                 <>
                     <div className={`model-popup`}>
-                        <div className="block">{/* <img src="./assets/Home/logo2.png" alt="M"/> */}</div>
+                        <div className="block"></div>
                         <span className="loader"></span>
                     </div>
                 </>
             ) : (
                 <>
-                    <Hero />
+                   <Hero />
                     <AboutUs />
                     <Info />
                     <Gallery />
@@ -36,6 +36,9 @@ export default function Home() {
                     <Footer />
                 </>
             )}
+
+
+
         </div>
     );
 }

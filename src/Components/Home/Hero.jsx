@@ -3,14 +3,11 @@ import Building from './../../assets/Home/mnc/building.png';
 import Table from './../../assets/Home/mnc/table.png';
 import Location from './../../assets/Home/mnc/location.png';
 import Parking from './../../assets/Home/mnc/parking.png';
-// import HeroImage from '../../assets/Home/mnc/hero.png';
 import Logo from '../../assets/Home/logo2.png';
 import SMLogo from '../../assets/Home/logo.png';
-// import { Link } from 'react-router-dom';
 import { RiAlignLeft } from 'react-icons/ri';
 import { MdCancel } from 'react-icons/md';
 import Hall from '../../assets/Home/hall/banner2.png';
-// import Hall from '../../assets/Home/hall/banner.png';
 export default function Hero() {
     const [navbarState, setNavBar] = useState(false);
     const handleNav = () => {
